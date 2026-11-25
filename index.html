@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Training Portal | AWS Architecture Project</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #263445;
+            background: #f3f6fa;
+            line-height: 1.7;
+        }
+        header {
+            background: #142d4e;
+            color: white;
+            padding: 55px 20px;
+            text-align: center;
+        }
+        header h1 { font-size: 34px; margin: 0 0 12px; }
+        header p { max-width: 750px; margin: auto; }
+        main { max-width: 950px; margin: 35px auto; padding: 0 20px; }
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 22px;
+            border-radius: 9px;
+            box-shadow: 0 2px 9px #0000000d;
+        }
+        h2 { color: #14558a; }
+        .facts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .fact {
+            background: #eaf2fa;
+            padding: 15px;
+            border-radius: 7px;
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+        }
+        .fact strong { display: block; font-size: 25px; color: #14558a; }
+        a { color: #075da8; font-weight: bold; }
+        footer {
+            background: #142d4e;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Secure Training Portal</h1>
+        <p>A secure and scalable AWS cloud architecture design for a fictional training company.</p>
+        <p>Cloud Computing | Week 2 Practical Project | 28 November 2026</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Project Overview</h2>
+            <p>
+                This project proposes a secure AWS environment for a training
+                company that provides an online portal for registered participants.
+                The design covers application hosting, private document storage,
+                participant records, network security and controlled administration.
+            </p>
+        </section>
+
+        <section>
+            <h2>Business Requirements</h2>
+            <div class="facts">
+                <div class="fact"><strong>100</strong>Registered participants</div>
+                <div class="fact"><strong>20</strong>Concurrent users</div>
+                <div class="fact"><strong>HTTPS</strong>Public website access</div>
+                <div class="fact"><strong>Private</strong>Documents and database</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Architecture and Security</h2>
+            <p>
+                The proposed design uses an Amazon VPC with public and private
+                subnets. An Application Load Balancer provides HTTPS access
+                to the application. Application compute runs privately, while
+                the participant database is isolated from direct public access.
+            </p>
+            <p>
+                Amazon S3 stores uploaded documents privately. IAM roles and
+                least-privilege permissions control application access.
+                Multi-factor authentication protects administrator access.
+            </p>
+        </section>
+
+        <section>
+            <h2>Project Deliverables</h2>
+            <p>The final report and architecture diagram will be published here.</p>
+            <ul>
+                <li>Secure Training Portal PDF Report</li>
+                <li>AWS Architecture Diagram</li>
+                <li>Network Access and Security Plan</li>
+                <li>IAM Permissions and Verification Plan</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Design Scope and Assumptions</h2>
+            <p>
+                This is an architecture and security design exercise.
+                No paid AWS infrastructure is required or claimed to have
+                been deployed. The proposed configuration is designed
+                around approximately 20 concurrent users.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Secure Training Portal | AWS Cloud Architecture Project</p>
+        <p>Designed and documented by Wale Eniade</p>
+    </footer>
+</body>
+</html>

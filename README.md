@@ -41,6 +41,10 @@ It uses HTTPS, private subnets, IAM roles, least-privilege permissions, multi-fa
 - [View the project website](https://goldenboy125.github.io/secure-training-portal/)
 - [Download the AWS Design Report](Secure_Training_Portal_Report.pdf)
 - [View the AWS Architecture Diagram](Architecture_Diagram.png)
+  
+## IAM Policy
+
+[View the least-privilege S3 document access policy](iam-document-access-policy.json)
 
 ## Project Scope
 
